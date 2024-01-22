@@ -13,4 +13,7 @@ terraform {
 resource "aws_instance" "tf_test_inst" {
 	ami = "ami-06aa3f7caf3a30282"
 	instance_type = "t2.micro"
+	tags = {
+		name = "tf_test_inst"
+	}
 }
